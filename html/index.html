@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="results.html" method="GET">
+      <div>
+        <label>First Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="first name"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label>Last Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="last name"
+          required
+        />
+      </div>
+      <br />
+      Gender
+
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" />
+      </div>
+      <br />
+      <!-- profile image -->
+      <div>
+        <label for="profile-image">Profile Image</label>
+        <input type="file" name="profile-image" id="profile-image" required />
+      </div>
+      <br />
+      <!-- self description -->
+      <label for="self-description">Self Description</label>
+      <textarea
+        name="self-description"
+        id="self-description"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <!-- select Country -->
+      <div>
+        <label for="country">Country</label>
+        <select name="country" id="sel-country">
+          <option value="India">India</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="Sri Lanka">Sri Lanka</option>
+          <option value="Afghanistan">Afghanistan</option>
+          <option value="China">China</option>
+          <option value="United States">United States</option>
+          <option value="United Kingdom">United Kingdom</option>
+        </select>
+      </div>
+      <br />
+      <!-- Reset and Submit button -->
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
